@@ -1,0 +1,33 @@
+.layout {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: auto;
+  color: white;
+  background-color: rgb(48, 48, 48);
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  padding: 15px 15px 15px 15px;
+}
+
+.container-2 {
+  height: 100%;
+  display: flex;
+  padding: 0 50px 0 50px;
+}
+
+.container-1 h1 {
+  text-align: center;
+}
+
+.flex-col4 {
+  margin-top: auto;
+  margin-bottom: auto;
+  flex: 1;
+  padding: 20px 30px 20px 30px;
+}

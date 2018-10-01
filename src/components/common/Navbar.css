@@ -1,0 +1,58 @@
+.header {
+  width: 100%;
+  font-size: 20px;
+  height: 100px;
+  background-color: #cccccc;
+  background-image: url("../../assets/grandient.png");
+}
+
+.header ul {
+  list-style-type: none;
+  margin-left: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav {
+  background: rgba(255, 255, 255, 0.1);
+  height: 100%;
+  display: flex;
+  margin: 10px 0 10px 0;
+  align-items: center;
+}
+
+.demologo {
+  margin-left: 20%;
+  margin-right: 40%;
+}
+
+.demologo img {
+  margin-left: 20%;
+  margin-right: 40%;
+  width: 50px;
+}
+
+.sidenavs {
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.sidenavs a {
+  padding: 10px 30px 10px 30px;
+  height: 100%;
+  background-color: rgba(25, 46, 75, 0.3);
+  border-radius: 5px;
+}
+
+/* remember to media query navigation*/
+@media;

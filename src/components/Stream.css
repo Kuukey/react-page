@@ -1,0 +1,23 @@
+.container-2 .flex-col4 img {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 70%;
+  border-radius: 10pc;
+  display: inline-block;
+  transform: skewX(20deg);
+}
+
+.container .flex-col4 {
+  align-items: center;
+  text-align: center;
+  transform: skewX(-20deg);
+  border: solid black 2px;
+}
+
+.container .flex-col4 p {
+  transform: skewX(20deg);
+}
+
+.flex-col4 {
+  max-width: 100%;
+}
