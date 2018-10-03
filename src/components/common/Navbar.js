@@ -11,7 +11,7 @@ class Navbar extends Component {
           <section className="header">
             <ul className="nav">
               <li className="demologo">
-                <NavLink exact to="">
+                <NavLink exact to="/">
                   <img src={demologo} />
                 </NavLink>
               </li>

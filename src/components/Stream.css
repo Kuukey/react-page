@@ -3,21 +3,33 @@
   margin-left: auto;
   max-width: 70%;
   border-radius: 10pc;
-  display: inline-block;
   transform: skewX(20deg);
 }
 
 .container .flex-col4 {
+  display: inline-block;
   align-items: center;
   text-align: center;
   transform: skewX(-20deg);
-  border: solid black 2px;
+  box-shadow: 1px 1px 10px;
+  margin: 0px 20px 0px 20px;
+  background-image: url(../assets/carbon_background.jpg);
+  transition: 0.3s;
+}
+
+.container .flex-col4:hover {
+  box-shadow: 1px 1px 20px;
+  transition: 0.3s;
 }
 
 .container .flex-col4 p {
   transform: skewX(20deg);
 }
 
-.flex-col4 {
+.con .flex-col4 {
   max-width: 100%;
+}
+
+.stream-container {
+  text-align: center;
 }
