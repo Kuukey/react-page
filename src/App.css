@@ -1,0 +1,26 @@
+.layout {
+  height: 100%; /* real browsers */
+  color: white;
+}
+
+.container {
+  height: 100%;
+  padding: 15px 15px 15px 15px;
+}
+
+.streamer-container {
+  height: 100%;
+  display: flex;
+  padding: 0 20% 0 20%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.flex-col4 {
+  margin-top: auto;
+  margin-bottom: auto;
+  flex: 1;
+  padding: 20px 30px 20px 30px;
+}

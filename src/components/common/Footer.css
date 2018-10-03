@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+  bottom: 0;
+  height: 60px; /* Height of the footer */
+  padding: 20px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.footer a {
+  text-decoration: underline;
+  color: #2e93ce;
+}
