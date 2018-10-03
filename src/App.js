@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import { HashRouter, Route, NavLink } from "react-router-dom";
+import React, { Component } from "react";
+import { HashRouter, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
@@ -13,10 +13,8 @@ class Main extends Component {
         <main>
           <Navbar />
           <div className="layout">
-            <section className="content">
-              <Route exact path="/" component={Home} />
-              <Route path="/stream" component={Stream} />
-            </section>
+            <Route exact path="/" component={Home} />
+            <Route path="/stream" component={Stream} />
           </div>
           <Footer />
         </main>

@@ -1,33 +1,47 @@
-.container-2 .flex-col4 img {
+.content {
+  background: linear-gradient(rgba(126, 126, 126, 0.45), rgba(26, 26, 26, 1)),
+    url(../assets/monster_hunter.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100%;
+  /* box-shadow: inset 1px 1px 1px 1000px rgba(0, 0, 0, 0.7); */
+}
+
+.streamer-container .flex-col4 img {
   margin-right: auto;
   margin-left: auto;
   max-width: 70%;
   border-radius: 10pc;
-  transform: skewX(20deg);
+  transform: skewX(10deg);
 }
 
 .container .flex-col4 {
   display: inline-block;
   align-items: center;
   text-align: center;
-  transform: skewX(-20deg);
-  box-shadow: 1px 1px 10px;
-  margin: 0px 20px 0px 20px;
+  transform: skewX(-10deg);
+  box-shadow: 1px 1px 15px rgb(59, 59, 59);
+  margin: 0px 10px 0px 10px;
   background-image: url(../assets/carbon_background.jpg);
+  opacity: 0.8;
+  border-radius: 0;
   transition: 0.3s;
 }
 
 .container .flex-col4:hover {
-  box-shadow: 1px 1px 20px;
+  box-shadow: 2px 2px 25px rgb(37, 37, 37);
+  opacity: 1;
   transition: 0.3s;
 }
 
 .container .flex-col4 p {
-  transform: skewX(20deg);
+  transform: skewX(10deg);
 }
 
 .con .flex-col4 {
-  max-width: 100%;
+  width: 100%;
 }
 
 .stream-container {
