@@ -12,8 +12,8 @@ class Stream extends Component {
     super();
     this.state = {
       data: {
-        streams: {
-          channel: []
+        data: {
+          id: []
         }
       }
     };
@@ -21,7 +21,7 @@ class Stream extends Component {
 
   componentDidMount() {
     fetch(
-      "https://api.twitch.tv/kraken/streams?channel=cantaperme92,dyrus,onlyafro,summit1g",
+      "https://api.twitch.tv/helix/streams?user_login=cantaperme92&user_login=dyrus&user_login=onlyafro&user_login=summit1g",
       {
         headers: {
           "Client-ID": "ijy4lxlrffy8rys879pwigbl2hvg8h"
@@ -33,7 +33,13 @@ class Stream extends Component {
   }
 
   isOnline() {
-    let totalOnline = this.state.data._total;
+    let onlineData = this.state.data.data;
+    let onlineArray = [];
+    for (let i in onlineData) {
+      onlineArray.push(i);
+    }
+
+    let totalOnline = onlineArray.length;
     if (totalOnline === 1) {
       return <h1>1 Streamer Online</h1>;
     } else if (totalOnline === 0) {
@@ -43,25 +49,22 @@ class Stream extends Component {
     }
   }
 
-  // "30613958176" ||
-  //       "73735538" ||
-  //       "26490481" ||
-  //       "17606157"
-
   render() {
-    const keys = this.state.data.streams;
+    const keys = this.state.data.data;
     const ids = [];
     for (let i = 0; i < keys.length; i++) {
-      ids.push(keys[i].channel._id);
+      ids.push(keys[i].user_id);
     }
-    console.log("second check" + ids);
+    console.log(keys);
+    console.log(ids);
     $(".stream-status").each(function(i) {
       let streamValue = $(this).attr("value");
       console.log($(this).attr("value"));
-      if (streamValue.indexOf(ids)) {
-        $(this).text("Offline");
-      } else {
+      console.log(ids.indexOf(streamValue));
+      if (ids.indexOf(streamValue) > -1) {
         $(this).text("Online");
+      } else {
+        $(this).text("Offline");
       }
     });
     return (
